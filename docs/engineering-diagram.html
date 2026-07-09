@@ -1,0 +1,259 @@
+<!doctype html>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>重力空间架构 · 工程图</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f8fafc;
+    --fg: #172033;
+    --muted: #5b6475;
+    --line: #64748b;
+    --neutral: #e2e8f0;
+    --input: #bfdbfe;
+    --process: #c7d2fe;
+    --storage: #99f6e4;
+    --external: #fde68a;
+    --risk: #fecaca;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f172a;
+      --fg: #e5e7eb;
+      --muted: #a3adbd;
+      --line: #94a3b8;
+      --neutral: #334155;
+      --input: #1d4ed8;
+      --process: #4338ca;
+      --storage: #0f766e;
+      --external: #92400e;
+      --risk: #991b1b;
+    }
+  }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 14px/1.5 ui-sans-serif, system-ui, sans-serif;
+  }
+  main {
+    max-width: 1000px;
+    margin: 32px auto;
+    padding: 0 20px;
+  }
+  svg {
+    width: 100%;
+    height: auto;
+    display: block;
+    background: var(--bg);
+    border-radius: 12px;
+  }
+  .title { font-size: 20px; font-weight: 650; fill: var(--fg); }
+  .label { font-size: 14px; font-weight: 600; fill: var(--fg); }
+  .small { font-size: 11px; fill: var(--muted); }
+  .node { stroke: var(--line); stroke-width: 1; rx: 8; ry: 8; }
+  .neutral { fill: var(--neutral); }
+  .input { fill: var(--input); }
+  .process { fill: var(--process); }
+  .storage { fill: var(--storage); }
+  .external { fill: var(--external); }
+  .risk { fill: var(--risk); }
+  .edge { stroke: var(--line); stroke-width: 1.5; fill: none; }
+  .dashed { stroke: var(--line); stroke-width: 1.5; fill: none; stroke-dasharray: 6 5; }
+  .zone { fill: none; stroke: var(--line); stroke-width: 1; stroke-dasharray: 6 5; opacity: 0.8; }
+  .tag { font-size: 10px; fill: var(--muted); }
+</style>
+<main>
+<svg viewBox="0 0 940 820" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- 标题 -->
+  <text x="470" y="30" text-anchor="middle" class="title">重力空间架构 · 工程图</text>
+  <text x="470" y="48" text-anchor="middle" class="small">思考层与行动层分离 · 交替时序 · 持续地形感知</text>
+
+  <!-- ════════════════════════════════════════════════ -->
+  <!-- 上方：行动层（执行期） -->
+  <!-- ════════════════════════════════════════════════ -->
+
+  <!-- 行动层背景区域 -->
+  <rect x="60" y="70" width="820" height="200" rx="10" class="zone" stroke-dasharray="8 4" />
+  <text x="75" y="90" class="label" fill="var(--process)">⚡ 行动层 · 运行期</text>
+  <text x="810" y="90" class="tag" text-anchor="end">步频: token 级</text>
+
+  <!-- Token 输入 -->
+  <rect x="100" y="120" width="80" height="50" rx="6" class="node input" />
+  <text x="140" y="150" text-anchor="middle" class="label">Token 输入</text>
+
+  <!-- 箭头 -->
+  <line x1="180" y1="145" x2="220" y2="145" class="edge" marker-end="url(#arrow)" />
+
+  <!-- 第一层 -->
+  <rect x="220" y="110" width="100" height="70" rx="6" class="node process" />
+  <text x="270" y="140" text-anchor="middle" class="label">Layer 1-12</text>
+  <text x="270" y="158" text-anchor="middle" class="small">注意力 + FFN</text>
+  <text x="270" y="172" text-anchor="middle" class="tag">无探测（浅层跳过）</text>
+
+  <line x1="320" y1="145" x2="360" y2="145" class="edge" marker-end="url(#arrow)" />
+
+  <!-- 中层 -->
+  <rect x="360" y="110" width="100" height="70" rx="6" class="node process" />
+  <text x="410" y="140" text-anchor="middle" class="label">Layer 13-24</text>
+  <text x="410" y="158" text-anchor="middle" class="small">+ 引力扰动 p</text>
+  <text x="410" y="172" text-anchor="middle" class="tag">间隔探测 (隔层查)</text>
+
+  <line x1="460" y1="145" x2="500" y2="145" class="edge" marker-end="url(#arrow)" />
+
+  <!-- 深层 -->
+  <rect x="500" y="110" width="100" height="70" rx="6" class="node process" />
+  <text x="550" y="140" text-anchor="middle" class="label">Layer 25-36</text>
+  <text x="550" y="158" text-anchor="middle" class="small">+ 引力扰动 p</text>
+  <text x="550" y="172" text-anchor="middle" class="tag">每层探测</text>
+
+  <line x1="600" y1="145" x2="640" y2="145" class="edge" marker-end="url(#arrow)" />
+
+  <!-- Logits 输出 -->
+  <rect x="640" y="120" width="80" height="50" rx="6" class="node storage" />
+  <text x="680" y="150" text-anchor="middle" class="label">Logits</text>
+
+  <line x1="720" y1="145" x2="760" y2="145" class="edge" marker-end="url(#arrow)" />
+
+  <!-- 采样 -->
+  <rect x="760" y="120" width="80" height="50" rx="6" class="node external" />
+  <text x="800" y="150" text-anchor="middle" class="label">采样</text>
+
+  <!-- 探索场说明箭头 -->
+  <line x1="450" y1="110" x2="450" y2="75" class="dashed" />
+  <line x1="550" y1="110" x2="550" y2="75" class="dashed" />
+  <text x="500" y="68" text-anchor="middle" class="tag">⬇ 每层 hidden state → 探测场查询</text>
+
+  <!-- ════════════════════════════════════════════════ -->
+  <!-- 中间：分离线 + 交替时序 -->
+  <!-- ════════════════════════════════════════════════ -->
+
+  <line x1="60" y1="285" x2="880" y2="285" class="edge" stroke-width="2" />
+
+  <!-- 时序箭头 -->
+  <text x="80" y="300" class="small" fill="var(--muted)">时序:</text>
+  <!-- 行动层运行 -->
+  <rect x="150" y="290" width="300" height="22" rx="4" fill="var(--process)" opacity="0.4" />
+  <text x="300" y="305" text-anchor="middle" class="tag">行动层运行期（token 步长）</text>
+
+  <line x1="450" y1="301" x2="520" y2="301" class="edge" marker-end="url(#arrow)" />
+
+  <!-- 思考层运行 -->
+  <rect x="520" y="290" width="280" height="22" rx="4" fill="var(--external)" opacity="0.4" />
+  <text x="660" y="305" text-anchor="middle" class="tag">思考层反思期（语义边界触发）</text>
+
+  <line x1="800" y1="301" x2="840" y2="301" class="edge" marker-end="url(#arrow)" />
+
+  <text x="840" y="305" class="tag">→ 循环</text>
+
+  <!-- ════════════════════════════════════════════════ -->
+  <!-- 下方：思考层 -->
+  <!-- ════════════════════════════════════════════════ -->
+
+  <!-- 思考层背景区域 -->
+  <rect x="60" y="330" width="820" height="240" rx="10" class="zone" stroke-dasharray="8 4" />
+  <text x="75" y="350" class="label" fill="var(--external)">🌌 思考层 · 静默 / 反思期</text>
+  <text x="810" y="350" class="tag" text-anchor="end">步频: 语义回合级</text>
+
+  <!-- 双曲空间（核心区域） -->
+  <rect x="100" y="370" width="350" height="180" rx="8" class="node neutral" />
+  <text x="275" y="390" text-anchor="middle" class="label">双曲空间（地形）</text>
+
+  <!-- 球体 -->
+  <circle cx="160" cy="440" r="18" fill="var(--external)" opacity="0.8" />
+  <text x="160" y="445" text-anchor="middle" class="small" fill="#172033">A</text>
+
+  <circle cx="220" cy="410" r="24" fill="var(--external)" opacity="0.8" />
+  <text x="220" y="415" text-anchor="middle" class="small" fill="#172033">B</text>
+
+  <circle cx="300" cy="460" r="12" fill="var(--external)" opacity="0.6" />
+  <text x="300" y="464" text-anchor="middle" class="small" fill="#172033">C</text>
+
+  <circle cx="370" cy="420" r="16" fill="var(--external)" opacity="0.7" />
+  <text x="370" y="425" text-anchor="middle" class="small" fill="#172033">D</text>
+
+  <circle cx="280" cy="495" r="10" fill="var(--external)" opacity="0.5" />
+  <text x="280" y="498" text-anchor="middle" class="small" fill="#172033">E</text>
+
+  <!-- 球体间的引力线 -->
+  <line x1="178" y1="438" x2="196" y2="416" class="dashed" stroke-width="0.8" opacity="0.3" />
+  <line x1="220" y1="434" x2="280" y2="456" class="dashed" stroke-width="0.8" opacity="0.3" />
+  <line x1="300" y1="472" x2="360" y2="432" class="dashed" stroke-width="0.8" opacity="0.3" />
+
+  <!-- 球体说明 -->
+  <text x="105" y="538" class="tag">球体 = token/概念 · 半径 = 质量（频率 × 多样性）</text>
+  <text x="105" y="550" class="tag">球体间距 = 语义距离 · 共享路径的球体相互靠近</text>
+
+  <!-- 探测场区域 -->
+  <rect x="480" y="370" width="170" height="80" rx="8" class="node input" opacity="0.7" />
+  <text x="565" y="400" text-anchor="middle" class="label">探测场</text>
+  <text x="565" y="418" text-anchor="middle" class="small">感知周围球体引力扰动</text>
+  <text x="565" y="432" text-anchor="middle" class="tag">扰动 = 质量 / 距离^α</text>
+
+  <!-- 探测场 → 扰动向量 -->
+  <rect x="480" y="465" width="170" height="50" rx="8" class="node process" opacity="0.7" />
+  <text x="565" y="488" text-anchor="middle" class="label">扰动向量 p</text>
+  <text x="565" y="502" text-anchor="middle" class="small">投影到 hidden state 维度</text>
+
+  <!-- 探测和球体间箭头 -->
+  <line x1="450" y1="440" x2="480" y2="430" class="edge" marker-end="url(#arrow)" />
+  <line x1="480" y1="500" x2="450" y2="495" class="dashed" />
+
+  <!-- 轨迹归纳区域 -->
+  <rect x="680" y="370" width="170" height="80" rx="8" class="node storage" opacity="0.7" />
+  <text x="765" y="395" text-anchor="middle" class="label">轨迹归纳</text>
+  <text x="765" y="412" text-anchor="middle" class="small">行动层轨迹 →</text>
+  <text x="765" y="426" text-anchor="middle" class="small">更新球体质量/位置</text>
+
+  <!-- 反思回路 -->
+  <rect x="680" y="465" width="170" height="50" rx="8" class="node external" opacity="0.7" />
+  <text x="765" y="488" text-anchor="middle" class="label">自监督收敛</text>
+  <text x="765" y="502" text-anchor="middle" class="small">预期 vs 实际差距缩小</text>
+
+  <!-- 轨迹归纳 → 双曲空间 -->
+  <line x1="680" y1="440" x2="450" y2="460" class="dashed" stroke="var(--line)" marker-end="url(#arrow)" />
+
+  <!-- 归纳 → 收敛 -->
+  <line x1="765" y1="450" x2="765" y2="465" class="edge" marker-end="url(#arrow)" />
+
+  <!-- 底部注释 -->
+  <text x="470" y="650" text-anchor="middle" class="tag">行动层每 N 层探测双曲空间 → 引力扰动 p 注入注意力输出 → 地形不变，感知取决于当前位置</text>
+
+  <!-- ════════════════════════════════════════════════ -->
+  <!-- 底部：被动/主动双模式 -->
+  <!-- ════════════════════════════════════════════════ -->
+
+  <text x="60" y="598" class="small" fill="var(--muted)">模式切换:</text>
+
+  <rect x="60" y="610" width="370" height="28" rx="6" fill="var(--neutral)" opacity="0.6" />
+  <text x="245" y="629" text-anchor="middle" class="small">😴 被动模式（行动层运行时）低精度感知 · 仅存轮廓</text>
+
+  <rect x="450" y="610" width="370" height="28" rx="6" fill="var(--external)" opacity="0.6" />
+  <text x="635" y="629" text-anchor="middle" class="small">🧠 主动模式（回合之间）高精度更新 · 结构化归纳</text>
+
+  <!-- 触发条件 -->
+  <text x="60" y="670" class="small" fill="var(--muted)">触发条件: 注意力熵增高 · 语义边界 · 引力差距低于阈值</text>
+
+  <!-- ════════════════════════════════════════════════ -->
+  <!-- 右边：信息卡片 -->
+  <!-- ════════════════════════════════════════════════ -->
+
+  <!-- 图例 -->
+  <rect x="70" y="690" width="800" height="110" rx="8" class="node neutral" />
+  <text x="90" y="712" class="label">关键性质</text>
+
+  <text x="90" y="735" class="small">◆ 思考层不产指令——只维护地形的稳定性。执行层走哪条路取决于它自己，但每一步都踩在地形上</text>
+  <text x="90" y="755" class="small">◆ 引力不是竞争关系——多个选项的引力可以同时增长。共享证据路径的球体相互靠近，形成聚类</text>
+  <text x="90" y="775" class="small">◆ 多样性 > 频率——一个词被多条独立路径微弱支持，比同一条强路径反复支持更可靠</text>
+  <text x="90" y="795" class="small">◆ 交替时序断开耦合——一个回合内偏置稳定，不引入震荡。收敛方向：预期引力与实际采样的差距缩小</text>
+
+  <!-- 箭头定义 -->
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="var(--line)" />
+    </marker>
+  </defs>
+
+</svg>
+</main>
