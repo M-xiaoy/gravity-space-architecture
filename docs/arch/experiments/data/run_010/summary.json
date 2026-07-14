@@ -1,0 +1,269 @@
+{
+  "run_id": "run_010",
+  "timestamp": "2026-07-13T21:26:50+0800",
+  "config": {
+    "model_name": "Qwen/Qwen2.5-0.5B",
+    "device": "cuda",
+    "dtype": "float16",
+    "max_new_tokens": 128,
+    "temperature": 0.7,
+    "random_seed": 42,
+    "run_id": "run_010",
+    "output_dir": "C:\\Users\\lc202\\.openclaw\\workspace\\架构笔记\\重力空间架构\\experiments\\data\\run_010"
+  },
+  "total_samples": 22,
+  "correct_count": 10,
+  "accuracy": 0.45454545454545453,
+  "choice_accuracy": 0.16666666666666666,
+  "free_accuracy": 0.5625,
+  "entropy_by_outcome": {
+    "correct_vs_wrong": {
+      "correct_avg_entropy": NaN,
+      "wrong_avg_entropy": NaN
+    },
+    "per_sample": [
+      {
+        "id": "ctr_004",
+        "eval_type": "choice",
+        "correct": false,
+        "avg_entropy": NaN,
+        "max_entropy": NaN,
+        "avg_certainty_gap": 0.635842,
+        "avg_p1_ratio": 0.73266,
+        "low_confidence_steps": 33,
+        "high_entropy_steps": 0
+      },
+      {
+        "id": "ctr_009",
+        "eval_type": "choice",
+        "correct": false,
+        "avg_entropy": NaN,
+        "max_entropy": NaN,
+        "avg_certainty_gap": 0.658006,
+        "avg_p1_ratio": 0.738922,
+        "low_confidence_steps": 35,
+        "high_entropy_steps": 0
+      },
+      {
+        "id": "ctr_010",
+        "eval_type": "choice",
+        "correct": false,
+        "avg_entropy": 1.4713,
+        "max_entropy": 3.4258,
+        "avg_certainty_gap": 0.45425,
+        "avg_p1_ratio": 0.589862,
+        "low_confidence_steps": 12,
+        "high_entropy_steps": 0
+      },
+      {
+        "id": "ctr_020",
+        "eval_type": "choice",
+        "correct": false,
+        "avg_entropy": NaN,
+        "max_entropy": NaN,
+        "avg_certainty_gap": 0.577123,
+        "avg_p1_ratio": 0.683004,
+        "low_confidence_steps": 8,
+        "high_entropy_steps": 0
+      },
+      {
+        "id": "ctr_022",
+        "eval_type": "choice",
+        "correct": true,
+        "avg_entropy": NaN,
+        "max_entropy": NaN,
+        "avg_certainty_gap": 0.599904,
+        "avg_p1_ratio": 0.697329,
+        "low_confidence_steps": 36,
+        "high_entropy_steps": 0
+      },
+      {
+        "id": "ctr_007",
+        "eval_type": "choice",
+        "correct": false,
+        "avg_entropy": 1.2239,
+        "max_entropy": 3.2285,
+        "avg_certainty_gap": 0.588736,
+        "avg_p1_ratio": 0.675456,
+        "low_confidence_steps": 40,
+        "high_entropy_steps": 0
+      },
+      {
+        "id": "ctr_001",
+        "eval_type": "free",
+        "correct": false,
+        "avg_entropy": NaN,
+        "max_entropy": NaN,
+        "avg_certainty_gap": 0.654012,
+        "avg_p1_ratio": 0.746386,
+        "low_confidence_steps": 32,
+        "high_entropy_steps": 0
+      },
+      {
+        "id": "ctr_002",
+        "eval_type": "free",
+        "correct": false,
+        "avg_entropy": NaN,
+        "max_entropy": NaN,
+        "avg_certainty_gap": 0.735045,
+        "avg_p1_ratio": 0.804368,
+        "low_confidence_steps": 24,
+        "high_entropy_steps": 0
+      },
+      {
+        "id": "ctr_003",
+        "eval_type": "free",
+        "correct": false,
+        "avg_entropy": NaN,
+        "max_entropy": NaN,
+        "avg_certainty_gap": 0.726194,
+        "avg_p1_ratio": 0.794341,
+        "low_confidence_steps": 20,
+        "high_entropy_steps": 0
+      },
+      {
+        "id": "ctr_012",
+        "eval_type": "free",
+        "correct": true,
+        "avg_entropy": NaN,
+        "max_entropy": NaN,
+        "avg_certainty_gap": 0.671341,
+        "avg_p1_ratio": 0.75473,
+        "low_confidence_steps": 21,
+        "high_entropy_steps": 0
+      },
+      {
+        "id": "ctr_005",
+        "eval_type": "free",
+        "correct": false,
+        "avg_entropy": NaN,
+        "max_entropy": NaN,
+        "avg_certainty_gap": 0.668186,
+        "avg_p1_ratio": 0.769438,
+        "low_confidence_steps": 26,
+        "high_entropy_steps": 0
+      },
+      {
+        "id": "ctr_006",
+        "eval_type": "free",
+        "correct": true,
+        "avg_entropy": 1.5769,
+        "max_entropy": 3.3555,
+        "avg_certainty_gap": 0.465779,
+        "avg_p1_ratio": 0.58459,
+        "low_confidence_steps": 18,
+        "high_entropy_steps": 0
+      },
+      {
+        "id": "ctr_008",
+        "eval_type": "free",
+        "correct": true,
+        "avg_entropy": NaN,
+        "max_entropy": NaN,
+        "avg_certainty_gap": 0.486305,
+        "avg_p1_ratio": 0.608195,
+        "low_confidence_steps": 47,
+        "high_entropy_steps": 0
+      },
+      {
+        "id": "ctr_011",
+        "eval_type": "free",
+        "correct": true,
+        "avg_entropy": NaN,
+        "max_entropy": NaN,
+        "avg_certainty_gap": 0.567918,
+        "avg_p1_ratio": 0.682197,
+        "low_confidence_steps": 38,
+        "high_entropy_steps": 0
+      },
+      {
+        "id": "ctr_013",
+        "eval_type": "free",
+        "correct": true,
+        "avg_entropy": NaN,
+        "max_entropy": NaN,
+        "avg_certainty_gap": 0.833756,
+        "avg_p1_ratio": 0.875411,
+        "low_confidence_steps": 17,
+        "high_entropy_steps": 0
+      },
+      {
+        "id": "ctr_014",
+        "eval_type": "free",
+        "correct": true,
+        "avg_entropy": NaN,
+        "max_entropy": NaN,
+        "avg_certainty_gap": 0.61764,
+        "avg_p1_ratio": 0.713769,
+        "low_confidence_steps": 30,
+        "high_entropy_steps": 0
+      },
+      {
+        "id": "ctr_015",
+        "eval_type": "free",
+        "correct": false,
+        "avg_entropy": NaN,
+        "max_entropy": NaN,
+        "avg_certainty_gap": 0.766859,
+        "avg_p1_ratio": 0.829444,
+        "low_confidence_steps": 5,
+        "high_entropy_steps": 0
+      },
+      {
+        "id": "ctr_016",
+        "eval_type": "free",
+        "correct": true,
+        "avg_entropy": NaN,
+        "max_entropy": NaN,
+        "avg_certainty_gap": 0.608539,
+        "avg_p1_ratio": 0.702986,
+        "low_confidence_steps": 20,
+        "high_entropy_steps": 0
+      },
+      {
+        "id": "ctr_017",
+        "eval_type": "free",
+        "correct": false,
+        "avg_entropy": NaN,
+        "max_entropy": NaN,
+        "avg_certainty_gap": 0.716877,
+        "avg_p1_ratio": 0.793015,
+        "low_confidence_steps": 21,
+        "high_entropy_steps": 0
+      },
+      {
+        "id": "ctr_018",
+        "eval_type": "free",
+        "correct": true,
+        "avg_entropy": NaN,
+        "max_entropy": NaN,
+        "avg_certainty_gap": 0.569618,
+        "avg_p1_ratio": 0.687769,
+        "low_confidence_steps": 26,
+        "high_entropy_steps": 0
+      },
+      {
+        "id": "ctr_019",
+        "eval_type": "free",
+        "correct": false,
+        "avg_entropy": NaN,
+        "max_entropy": NaN,
+        "avg_certainty_gap": 0.445233,
+        "avg_p1_ratio": 0.589264,
+        "low_confidence_steps": 19,
+        "high_entropy_steps": 0
+      },
+      {
+        "id": "ctr_021",
+        "eval_type": "free",
+        "correct": true,
+        "avg_entropy": NaN,
+        "max_entropy": NaN,
+        "avg_certainty_gap": 0.684145,
+        "avg_p1_ratio": 0.767255,
+        "low_confidence_steps": 29,
+        "high_entropy_steps": 0
+      }
+    ]
+  }
+}

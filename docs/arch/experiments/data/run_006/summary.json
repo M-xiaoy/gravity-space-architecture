@@ -1,0 +1,251 @@
+{
+  "run_id": "run_006",
+  "timestamp": "2026-07-11T20:44:41+0800",
+  "config": {
+    "model_name": "Qwen/Qwen2.5-0.5B",
+    "device": "cuda",
+    "dtype": "float16",
+    "temperature": 0.7,
+    "num_paths": 10,
+    "max_new_tokens": 128,
+    "top_p": 0.9,
+    "random_seed": 42,
+    "alpha": 0.3,
+    "diversity_metric": "cross_path_entropy",
+    "output_dir": "C:\\Users\\lc202\\.openclaw\\workspace\\架构笔记\\重力空间架构\\experiments\\data\\run_006",
+    "run_id": "run_006"
+  },
+  "total_samples": 22,
+  "standard_accuracy": 0.4545,
+  "gravity_accuracy": 0.4545,
+  "accuracy_delta": 0.0,
+  "uncertain_total": 4,
+  "standard_uncertain_correct": 1,
+  "gravity_uncertain_correct": 1,
+  "standard_false_confidence": 11,
+  "gravity_false_confidence": 11,
+  "diversity_helpful": 0,
+  "diversity_harmful": 0,
+  "per_sample": [
+    {
+      "id": "ctr_001",
+      "correct": "C",
+      "std_pred": "A",
+      "grav_pred": "A",
+      "std_correct": false,
+      "grav_correct": false,
+      "diversity_entropy": 0.353759374819711,
+      "diversity_bonus": 0.1061278124459133
+    },
+    {
+      "id": "ctr_002",
+      "correct": "C",
+      "std_pred": "A",
+      "grav_pred": "A",
+      "std_correct": false,
+      "grav_correct": false,
+      "diversity_entropy": 0.31091750708257115,
+      "diversity_bonus": 0.09327525212477135
+    },
+    {
+      "id": "ctr_003",
+      "correct": "C",
+      "std_pred": "A",
+      "grav_pred": "A",
+      "std_correct": false,
+      "grav_correct": false,
+      "diversity_entropy": 0.4092232318950599,
+      "diversity_bonus": 0.12276696956851796
+    },
+    {
+      "id": "ctr_004",
+      "correct": "B",
+      "std_pred": null,
+      "grav_pred": null,
+      "std_correct": false,
+      "grav_correct": false,
+      "diversity_entropy": 0.0,
+      "diversity_bonus": 0.0
+    },
+    {
+      "id": "ctr_005",
+      "correct": "B",
+      "std_pred": "B",
+      "grav_pred": "B",
+      "std_correct": true,
+      "grav_correct": true,
+      "diversity_entropy": 0.31091750708257115,
+      "diversity_bonus": 0.09327525212477135
+    },
+    {
+      "id": "ctr_006",
+      "correct": "B",
+      "std_pred": "A",
+      "grav_pred": "A",
+      "std_correct": false,
+      "grav_correct": false,
+      "diversity_entropy": 0.4181656600790517,
+      "diversity_bonus": 0.1254496980237155
+    },
+    {
+      "id": "ctr_007",
+      "correct": "A",
+      "std_pred": "B",
+      "grav_pred": "B",
+      "std_correct": false,
+      "grav_correct": false,
+      "diversity_entropy": 0.33333333333333337,
+      "diversity_bonus": 0.1
+    },
+    {
+      "id": "ctr_008",
+      "correct": "B",
+      "std_pred": "A",
+      "grav_pred": "A",
+      "std_correct": false,
+      "grav_correct": false,
+      "diversity_entropy": 0.38625344285713004,
+      "diversity_bonus": 0.115876032857139
+    },
+    {
+      "id": "ctr_009",
+      "correct": "B",
+      "std_pred": "B",
+      "grav_pred": "B",
+      "std_correct": true,
+      "grav_correct": true,
+      "diversity_entropy": 0.4181656600790517,
+      "diversity_bonus": 0.1254496980237155
+    },
+    {
+      "id": "ctr_010",
+      "correct": "B",
+      "std_pred": "B",
+      "grav_pred": "B",
+      "std_correct": true,
+      "grav_correct": true,
+      "diversity_entropy": 0.0,
+      "diversity_bonus": 0.0
+    },
+    {
+      "id": "ctr_011",
+      "correct": "B",
+      "std_pred": "A",
+      "grav_pred": "A",
+      "std_correct": false,
+      "grav_correct": false,
+      "diversity_entropy": 0.5644754678724236,
+      "diversity_bonus": 0.16934264036172708
+    },
+    {
+      "id": "ctr_012",
+      "correct": "C",
+      "std_pred": "C",
+      "grav_pred": "C",
+      "std_correct": true,
+      "grav_correct": true,
+      "diversity_entropy": 0.5644754678724236,
+      "diversity_bonus": 0.16934264036172708
+    },
+    {
+      "id": "ctr_013",
+      "correct": "B",
+      "std_pred": "B",
+      "grav_pred": "B",
+      "std_correct": true,
+      "grav_correct": true,
+      "diversity_entropy": 0.4056390622295664,
+      "diversity_bonus": 0.12169171866886992
+    },
+    {
+      "id": "ctr_014",
+      "correct": "B",
+      "std_pred": "A",
+      "grav_pred": "A",
+      "std_correct": false,
+      "grav_correct": false,
+      "diversity_entropy": 0.4056390622295664,
+      "diversity_bonus": 0.12169171866886992
+    },
+    {
+      "id": "ctr_015",
+      "correct": "B",
+      "std_pred": "B",
+      "grav_pred": "B",
+      "std_correct": true,
+      "grav_correct": true,
+      "diversity_entropy": 0.4841962570206112,
+      "diversity_bonus": 0.14525887710618335
+    },
+    {
+      "id": "ctr_016",
+      "correct": "B",
+      "std_pred": "A",
+      "grav_pred": "A",
+      "std_correct": false,
+      "grav_correct": false,
+      "diversity_entropy": 0.31091750708257115,
+      "diversity_bonus": 0.09327525212477135
+    },
+    {
+      "id": "ctr_017",
+      "correct": "B",
+      "std_pred": "B",
+      "grav_pred": "B",
+      "std_correct": true,
+      "grav_correct": true,
+      "diversity_entropy": 0.31091750708257115,
+      "diversity_bonus": 0.09327525212477135
+    },
+    {
+      "id": "ctr_018",
+      "correct": "B",
+      "std_pred": "A",
+      "grav_pred": "A",
+      "std_correct": false,
+      "grav_correct": false,
+      "diversity_entropy": 0.4056390622295664,
+      "diversity_bonus": 0.12169171866886992
+    },
+    {
+      "id": "ctr_019",
+      "correct": "B",
+      "std_pred": "B",
+      "grav_pred": "B",
+      "std_correct": true,
+      "grav_correct": true,
+      "diversity_entropy": 0.5793801642856949,
+      "diversity_bonus": 0.17381404928570848
+    },
+    {
+      "id": "ctr_020",
+      "correct": "A",
+      "std_pred": "A",
+      "grav_pred": "A",
+      "std_correct": true,
+      "grav_correct": true,
+      "diversity_entropy": -0.0,
+      "diversity_bonus": -0.0
+    },
+    {
+      "id": "ctr_021",
+      "correct": "A",
+      "std_pred": "B",
+      "grav_pred": "B",
+      "std_correct": false,
+      "grav_correct": false,
+      "diversity_entropy": 0.5904362833084089,
+      "diversity_bonus": 0.17713088499252266
+    },
+    {
+      "id": "ctr_022",
+      "correct": "A",
+      "std_pred": "A",
+      "grav_pred": "A",
+      "std_correct": true,
+      "grav_correct": true,
+      "diversity_entropy": -0.0,
+      "diversity_bonus": -0.0
+    }
+  ]
+}

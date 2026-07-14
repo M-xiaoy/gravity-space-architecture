@@ -1,0 +1,12 @@
+{
+  "model_name": "Qwen/Qwen2.5-0.5B",
+  "device": "cuda",
+  "dtype": "float16",
+  "max_new_tokens": 128,
+  "temperature": 0.7,
+  "random_seed": 42,
+  "alpha": 0.3,
+  "run_id": "run_008",
+  "output_dir": "C:\\Users\\lc202\\.openclaw\\workspace\\架构笔记\\重力空间架构\\experiments\\data\\run_008",
+  "timestamp": "2026-07-11T21:25:32+0800"
+}

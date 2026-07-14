@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 750" font-family="'Segoe UI', 'Noto Sans SC', Arial, sans-serif" font-size="13">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#666"/>
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#4A90D9"/>
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#5CB85C"/>
+    </marker>
+    <marker id="arrow-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#E67E22"/>
+    </marker>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8f9fa"/>
+      <stop offset="100%" stop-color="#e9ecef"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="900" height="750" fill="url(#bg)" rx="8"/>
+
+  <!-- 标题 -->
+  <text x="450" y="28" text-anchor="middle" font-size="18" font-weight="bold" fill="#2c3e50">重力空间架构 · 组件全景</text>
+  <text x="450" y="46" text-anchor="middle" font-size="11" fill="#7f8c8d">2026-07-11 · Phase 1-4 + Phase 5（设计中）</text>
+
+  <!-- ═══════════════ 外部世界 ═══════════════ -->
+  <rect x="30" y="60" width="200" height="50" rx="25" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1.5"/>
+  <text x="130" y="89" text-anchor="middle" font-size="14" fill="#2c3e50">用户 / 外部世界</text>
+
+  <!-- ═══════════════ 行动层 ═══════════════ -->
+  <rect x="300" y="60" width="280" height="80" rx="10" fill="#D6EAF8" stroke="#4A90D9" stroke-width="2"/>
+  <text x="440" y="85" text-anchor="middle" font-size="15" font-weight="bold" fill="#2c3e50">C1 · 行动层</text>
+  <text x="440" y="103" text-anchor="middle" font-size="11" fill="#555">响应请求 → 产出 token 序列和轨迹</text>
+  <text x="440" y="118" text-anchor="middle" font-size="11" fill="#555">接收思考层的扰动向量 pₜ</text>
+  <text x="440" y="133" text-anchor="middle" font-size="10" fill="#4A90D9">噪音高时思考层降为观察者，行动层继续运行</text>
+
+  <!-- 用户→行动层 -->
+  <line x1="230" y1="85" x2="295" y2="85" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="262" y="80" text-anchor="middle" font-size="10" fill="#666">用户输入</text>
+
+  <!-- 行动层→用户 -->
+  <line x1="440" y1="140" x2="440" y2="165" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="460" y="157" text-anchor="middle" font-size="10" fill="#666">输出</text>
+
+  <!-- ═══════════════ 认知状态管理器 ═══════════════ -->
+  <rect x="645" y="55" width="220" height="105" rx="10" fill="#FDEBD0" stroke="#E67E22" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="755" y="77" text-anchor="middle" font-size="14" font-weight="bold" fill="#E67E22">C4 · 认知状态管理器</text>
+  <text x="755" y="95" text-anchor="middle" font-size="10" fill="#555">⚠️ 设计中</text>
+  <text x="755" y="112" text-anchor="middle" font-size="10" fill="#555">感知: 噪音/负载/反馈/时间</text>
+  <text x="755" y="127" text-anchor="middle" font-size="10" fill="#555">决策: 思考层运行模式切换</text>
+  <text x="755" y="142" text-anchor="middle" font-size="10" fill="#555">输出: 状态信号 → 各组件</text>
+
+  <!-- 行动层→状态管理器（状态信号） -->
+  <line x1="580" y1="95" x2="640" y2="95" stroke="#E67E22" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow-orange)"/>
+  <text x="610" y="90" text-anchor="middle" font-size="9" fill="#E67E22">状态信号</text>
+
+  <!-- ═══════════════ 思考层（大框） ═══════════════ -->
+  <rect x="50" y="195" width="800" height="280" rx="12" fill="#EAECEE" stroke="#95A5A6" stroke-width="1.5"/>
+  <text x="450" y="218" text-anchor="middle" font-size="16" font-weight="bold" fill="#2c3e50">思考层</text>
+
+  <!-- C2 重力场 -->
+  <rect x="80" y="240" width="320" height="120" rx="8" fill="#E8DAEF" stroke="#8E44AD" stroke-width="2"/>
+  <text x="240" y="263" text-anchor="middle" font-size="14" font-weight="bold" fill="#6C3483">C2 · 重力场</text>
+  <text x="240" y="280" text-anchor="middle" font-size="11" fill="#555">双曲空间 + 球体集合（218 球体）</text>
+  <text x="240" y="296" text-anchor="middle" font-size="11" fill="#555">场域叠加 → 扰动向量 pₜ</text>
+  <text x="240" y="312" text-anchor="middle" font-size="11" fill="#555">多样性度量 · 观测机制</text>
+  <text x="240" y="328" text-anchor="middle" font-size="11" fill="#555">存储: 坐标/质量/连接表/指纹</text>
+  <text x="240" y="344" text-anchor="middle" font-size="10" fill="#8E44AD">每个球体 4 字段 · 预计 3MB–53MB</text>
+
+  <!-- C3 预测编码 -->
+  <rect x="500" y="240" width="320" height="120" rx="8" fill="#D5F5E3" stroke="#27AE60" stroke-width="2"/>
+  <text x="660" y="263" text-anchor="middle" font-size="14" font-weight="bold" fill="#1E8449">C3 · 预测编码</text>
+  <text x="660" y="280" text-anchor="middle" font-size="11" fill="#555">共享层: zₜ = W·concat(hₜ, pₜ, fₜ)</text>
+  <text x="660" y="296" text-anchor="middle" font-size="11" fill="#555">头 A: 状态预测 (MSE, α=5)</text>
+  <text x="660" y="312" text-anchor="middle" font-size="11" fill="#555">头 B: 场域稳定性预测 (β=1)</text>
+  <text x="660" y="328" text-anchor="middle" font-size="11" fill="#555">惊异度归因: contrib × diversity × error</text>
+  <text x="660" y="344" text-anchor="middle" font-size="10" fill="#27AE60">约 400 万参数 · 反思期自监督训练</text>
+
+  <!-- C6 用户反馈处理器 -->
+  <rect x="80" y="385" width="320" height="70" rx="8" fill="#FADBD8" stroke="#E74C3C" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="240" y="408" text-anchor="middle" font-size="13" font-weight="bold" fill="#C0392B">C6 · 用户反馈处理器</text>
+  <text x="240" y="425" text-anchor="middle" font-size="10" fill="#555">⚠️ 设计中</text>
+  <text x="240" y="440" text-anchor="middle" font-size="10" fill="#555">不同意 → 解释 → pending_revision → idle 吸收</text>
+
+  <!-- C7 变更记录器 -->
+  <rect x="500" y="385" width="320" height="70" rx="8" fill="#F5EEB8" stroke="#F1C40F" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="660" y="408" text-anchor="middle" font-size="13" font-weight="bold" fill="#D4AC0D">C7 · 变更记录器</text>
+  <text x="660" y="425" text-anchor="middle" font-size="10" fill="#555">❓ 待设计</text>
+  <text x="660" y="440" text-anchor="middle" font-size="10" fill="#555">记录内部变更，实现「三日不见当刮目相看」</text>
+
+  <!-- 重力场→行动层（扰动向量） -->
+  <line x1="240" y1="240" x2="440" y2="140" stroke="#8E44AD" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="330" y="195" text-anchor="middle" font-size="10" fill="#8E44AD">扰动向量 pₜ</text>
+
+  <!-- 行动层→重力场（轨迹 token） -->
+  <line x1="440" y1="140" x2="240" y2="235" stroke="#666" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow)"/>
+  <text x="350" y="170" text-anchor="middle" font-size="10" fill="#666">轨迹 token</text>
+
+  <!-- 重力场→预测编码 -->
+  <line x1="400" y1="300" x2="495" y2="300" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="448" y="295" text-anchor="middle" font-size="10" fill="#666">地形快照</text>
+
+  <!-- 状态管理器→思考层模式切换 -->
+  <line x1="645" y1="110" x2="450" y2="210" stroke="#E67E22" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow-orange)"/>
+  <text x="540" y="140" text-anchor="middle" font-size="9" fill="#E67E22">模式切换指令</text>
+
+  <!-- 用户反馈→C6 -->
+  <line x1="130" y1="110" x2="200" y2="385" stroke="#E74C3C" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow)"/>
+  <text x="140" y="250" text-anchor="middle" font-size="9" fill="#E74C3C" transform="rotate(-70, 140, 250)">不同意反馈</text>
+
+  <!-- ═══════════════ Idle 睡眠线程 ═══════════════ -->
+  <rect x="140" y="515" width="620" height="110" rx="10" fill="#D5DBDB" stroke="#717D7E" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="450" y="538" text-anchor="middle" font-size="15" font-weight="bold" fill="#566573">C5 · idle 睡眠线程</text>
+  <text x="450" y="556" text-anchor="middle" font-size="10" fill="#555">⚠️ 设计中 · best-effort 维护，允许中断，下一轮补偿</text>
+
+  <!-- 三个工作块 -->
+  <rect x="165" y="565" width="175" height="45" rx="6" fill="#EBF5FB" stroke="#4A90D9" stroke-width="1.5"/>
+  <text x="252" y="583" text-anchor="middle" font-size="11" font-weight="bold" fill="#2C3E50">噪音清理</text>
+  <text x="252" y="599" text-anchor="middle" font-size="9" fill="#555">删除冗余弱连接球体</text>
+
+  <rect x="362" y="565" width="175" height="45" rx="6" fill="#EAFAF1" stroke="#27AE60" stroke-width="1.5"/>
+  <text x="449" y="583" text-anchor="middle" font-size="11" font-weight="bold" fill="#1E8449">内容复盘</text>
+  <text x="449" y="599" text-anchor="middle" font-size="9" fill="#555">重放近期轨迹，更新质量</text>
+
+  <rect x="559" y="565" width="175" height="45" rx="6" fill="#FDF2E9" stroke="#E67E22" stroke-width="1.5"/>
+  <text x="646" y="583" text-anchor="middle" font-size="11" font-weight="bold" fill="#D35400">记忆归档</text>
+  <text x="646" y="599" text-anchor="middle" font-size="9" fill="#555">去冗余、建索引、压缩</text>
+
+  <!-- 思考层→Idle -->
+  <line x1="450" y1="475" x2="450" y2="512" stroke="#717D7E" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow)"/>
+  <text x="465" y="498" text-anchor="middle" font-size="9" fill="#717D7E">进入 Idle</text>
+
+  <!-- Idle 回到重力场 -->
+  <line x1="300" y1="515" x2="240" y2="365" stroke="#717D7E" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow)"/>
+  <text x="260" y="450" text-anchor="middle" font-size="9" fill="#717D7E" transform="rotate(-80, 260, 450)">归档/清理写回</text>
+
+  <!-- ═══════════════ Idle 触发条件 ═══════════════ -->
+  <rect x="95" y="660" width="710" height="70" rx="8" fill="none" stroke="#bdc3c7" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="450" y="680" text-anchor="middle" font-size="11" font-weight="bold" fill="#7f8c8d">Idle 触发条件</text>
+
+  <rect x="110" y="685" width="210" height="32" rx="16" fill="#FADBD8" stroke="#E74C3C" stroke-width="1.5"/>
+  <text x="215" y="705" text-anchor="middle" font-size="11" fill="#C0392B">① 噪音阈值告警</text>
+
+  <rect x="345" y="685" width="210" height="32" rx="16" fill="#D5F5E3" stroke="#27AE60" stroke-width="1.5"/>
+  <text x="450" y="705" text-anchor="middle" font-size="11" fill="#1E8449">② 长时间静默</text>
+
+  <rect x="580" y="685" width="210" height="32" rx="16" fill="#D6EAF8" stroke="#4A90D9" stroke-width="1.5"/>
+  <text x="685" y="705" text-anchor="middle" font-size="11" fill="#2C3E50">③ 用户手动触发</text>
+
+  <!-- 触发条件向上箭头 -->
+  <line x1="215" y1="685" x2="252" y2="628" stroke="#E74C3C" stroke-width="1" stroke-dasharray="3,3" marker-end="url(#arrow)"/>
+  <line x1="450" y1="685" x2="450" y2="628" stroke="#27AE60" stroke-width="1" stroke-dasharray="3,3" marker-end="url(#arrow)"/>
+  <line x1="685" y1="685" x2="646" y2="628" stroke="#4A90D9" stroke-width="1" stroke-dasharray="3,3" marker-end="url(#arrow)"/>
+
+  <!-- 图例 -->
+  <rect x="30" y="740" width="12" height="12" fill="#D6EAF8" stroke="#4A90D9" stroke-width="1"/>
+  <text x="48" y="750" font-size="10" fill="#555">已定义</text>
+  <rect x="100" y="740" width="12" height="12" fill="#FDEBD0" stroke="#E67E22" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="118" y="750" font-size="10" fill="#555">设计中</text>
+  <rect x="180" y="740" width="12" height="12" fill="#F5EEB8" stroke="#F1C40F" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="198" y="750" font-size="10" fill="#555">待设计</text>
+</svg>

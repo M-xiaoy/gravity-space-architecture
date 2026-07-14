@@ -1,0 +1,289 @@
+{
+  "run_id": "run_009",
+  "timestamp": "2026-07-11T21:30:40+0800",
+  "config": {
+    "model_name": "Qwen/Qwen2.5-0.5B",
+    "device": "cuda",
+    "dtype": "float16",
+    "max_new_tokens": 128,
+    "temperature": 0.7,
+    "random_seed": 42,
+    "alpha": 0.3,
+    "run_id": "run_009",
+    "output_dir": "C:\\Users\\lc202\\.openclaw\\workspace\\架构笔记\\重力空间架构\\experiments\\data\\run_009"
+  },
+  "total_samples": 22,
+  "choice_accuracy": 0.0,
+  "free_accuracy": 0.6875,
+  "uncertainty_accuracy": 0.25,
+  "avg_diversity_ratio": 0.09062690481221009,
+  "avg_token_change_ratio": 0.0,
+  "tokens_changed_total": 0,
+  "tokens_analyzed_total": 2102,
+  "per_sample": [
+    {
+      "id": "ctr_004",
+      "eval_type": "choice",
+      "correct": false,
+      "detail": "未提取到答案",
+      "token_change_ratio": 0.0,
+      "avg_diversity": 0.09191171875,
+      "diversity_range": [
+        0.0536,
+        0.1399
+      ]
+    },
+    {
+      "id": "ctr_009",
+      "eval_type": "choice",
+      "correct": false,
+      "detail": "未提取到答案",
+      "token_change_ratio": 0.0,
+      "avg_diversity": 0.0806375,
+      "diversity_range": [
+        0.0476,
+        0.125
+      ]
+    },
+    {
+      "id": "ctr_010",
+      "eval_type": "choice",
+      "correct": false,
+      "detail": "未提取到答案",
+      "token_change_ratio": 0.0,
+      "avg_diversity": 0.09361428571428572,
+      "diversity_range": [
+        0.0625,
+        0.122
+      ]
+    },
+    {
+      "id": "ctr_020",
+      "eval_type": "choice",
+      "correct": false,
+      "detail": "未提取到答案",
+      "token_change_ratio": 0.0,
+      "avg_diversity": 0.08431311475409835,
+      "diversity_range": [
+        0.0446,
+        0.1161
+      ]
+    },
+    {
+      "id": "ctr_022",
+      "eval_type": "choice",
+      "correct": false,
+      "detail": "未提取到答案",
+      "token_change_ratio": 0.0,
+      "avg_diversity": 0.08670546875000001,
+      "diversity_range": [
+        0.0476,
+        0.131
+      ]
+    },
+    {
+      "id": "ctr_007",
+      "eval_type": "choice",
+      "correct": false,
+      "detail": "未提取到答案",
+      "token_change_ratio": 0.0,
+      "avg_diversity": 0.0895076923076923,
+      "diversity_range": [
+        0.0565,
+        0.1131
+      ]
+    },
+    {
+      "id": "ctr_001",
+      "eval_type": "free",
+      "correct": false,
+      "detail": "不确定性表达: False",
+      "token_change_ratio": 0.0,
+      "avg_diversity": 0.08952475247524752,
+      "diversity_range": [
+        0.0565,
+        0.128
+      ]
+    },
+    {
+      "id": "ctr_002",
+      "eval_type": "free",
+      "correct": false,
+      "detail": "不确定性表达: False",
+      "token_change_ratio": 0.0,
+      "avg_diversity": 0.08963142857142858,
+      "diversity_range": [
+        0.0565,
+        0.119
+      ]
+    },
+    {
+      "id": "ctr_003",
+      "eval_type": "free",
+      "correct": false,
+      "detail": "不确定性表达: False",
+      "token_change_ratio": 0.0,
+      "avg_diversity": 0.09298124999999999,
+      "diversity_range": [
+        0.0357,
+        0.1548
+      ]
+    },
+    {
+      "id": "ctr_012",
+      "eval_type": "free",
+      "correct": true,
+      "detail": "不确定性表达: True",
+      "token_change_ratio": 0.0,
+      "avg_diversity": 0.09349137931034483,
+      "diversity_range": [
+        0.0387,
+        0.1339
+      ]
+    },
+    {
+      "id": "ctr_005",
+      "eval_type": "free",
+      "correct": true,
+      "detail": "命中关键词: ['北京']",
+      "token_change_ratio": 0.0,
+      "avg_diversity": 0.09305725806451613,
+      "diversity_range": [
+        0.0595,
+        0.1429
+      ]
+    },
+    {
+      "id": "ctr_006",
+      "eval_type": "free",
+      "correct": true,
+      "detail": "命中关键词: ['周一', '周四', '改']",
+      "token_change_ratio": 0.0,
+      "avg_diversity": 0.0958961038961039,
+      "diversity_range": [
+        0.0565,
+        0.1399
+      ]
+    },
+    {
+      "id": "ctr_008",
+      "eval_type": "free",
+      "correct": true,
+      "detail": "命中关键词: ['86']",
+      "token_change_ratio": 0.0,
+      "avg_diversity": 0.10030149253731342,
+      "diversity_range": [
+        0.0446,
+        0.1458
+      ]
+    },
+    {
+      "id": "ctr_011",
+      "eval_type": "free",
+      "correct": true,
+      "detail": "命中关键词: ['不', '卫生局']",
+      "token_change_ratio": 0.0,
+      "avg_diversity": 0.096003125,
+      "diversity_range": [
+        0.0387,
+        0.1488
+      ]
+    },
+    {
+      "id": "ctr_013",
+      "eval_type": "free",
+      "correct": true,
+      "detail": "命中关键词: ['小兰']",
+      "token_change_ratio": 0.0,
+      "avg_diversity": 0.095471875,
+      "diversity_range": [
+        0.0446,
+        0.131
+      ]
+    },
+    {
+      "id": "ctr_014",
+      "eval_type": "free",
+      "correct": true,
+      "detail": "命中关键词: ['延期', '取消']",
+      "token_change_ratio": 0.0,
+      "avg_diversity": 0.09273508771929824,
+      "diversity_range": [
+        0.0595,
+        0.125
+      ]
+    },
+    {
+      "id": "ctr_015",
+      "eval_type": "free",
+      "correct": false,
+      "detail": "命中关键词: []",
+      "token_change_ratio": 0.0,
+      "avg_diversity": 0.09535312500000001,
+      "diversity_range": [
+        0.0357,
+        0.1607
+      ]
+    },
+    {
+      "id": "ctr_016",
+      "eval_type": "free",
+      "correct": true,
+      "detail": "命中关键词: ['三件']",
+      "token_change_ratio": 0.0,
+      "avg_diversity": 0.09088048780487805,
+      "diversity_range": [
+        0.0655,
+        0.128
+      ]
+    },
+    {
+      "id": "ctr_017",
+      "eval_type": "free",
+      "correct": false,
+      "detail": "命中关键词: []",
+      "token_change_ratio": 0.0,
+      "avg_diversity": 0.093475,
+      "diversity_range": [
+        0.0387,
+        0.1548
+      ]
+    },
+    {
+      "id": "ctr_018",
+      "eval_type": "free",
+      "correct": true,
+      "detail": "命中关键词: ['超速']",
+      "token_change_ratio": 0.0,
+      "avg_diversity": 0.08347919999999999,
+      "diversity_range": [
+        0.0506,
+        0.1161
+      ]
+    },
+    {
+      "id": "ctr_019",
+      "eval_type": "free",
+      "correct": true,
+      "detail": "命中关键词: ['8折']",
+      "token_change_ratio": 0.0,
+      "avg_diversity": 0.08017421875,
+      "diversity_range": [
+        0.0387,
+        0.1488
+      ]
+    },
+    {
+      "id": "ctr_021",
+      "eval_type": "free",
+      "correct": true,
+      "detail": "命中关键词: ['东边', '东']",
+      "token_change_ratio": 0.0,
+      "avg_diversity": 0.08464634146341464,
+      "diversity_range": [
+        0.0446,
+        0.119
+      ]
+    }
+  ]
+}
