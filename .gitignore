@@ -2,3 +2,16 @@ node_modules/
 __pycache__/
 .DS_Store
 *.pyc
+
+# Binary experiment data
+experiments/**/activations.npz
+experiments/**/features.npz
+experiments/**/runs/*/
+!experiments/**/runs/*/config.json
+!experiments/**/runs/*/features.json
+!experiments/**/runs/*/simulation.json
+!experiments/**/runs/*/results.jsonl
+!experiments/**/runs/*/summary.json
+
+# Large data (keep config/summary only)
+experiments/data/run_*/results_intermediate.jsonl
